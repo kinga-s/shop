@@ -1,19 +1,25 @@
 import React from "react";
 import { connect } from "react-redux";
 import { addToBasket } from "./actions";
+import Card from "react-bootstrap/Card";
 
-import { Button } from "react-bootstrap";
+import { Button, Container } from "react-bootstrap";
 
 function Product(props) {
   const handleAddToBasket = () => {
-    props.addToBasket(props.details);
+    props.addToBasket(props.product["id"]);
   };
 
   return (
-    <div>
-      <>{props.details}</>
-      <Button onClick={handleAddToBasket}>Add</Button>
-    </div>
+    <Card style={{ width: "30rem", height: "35rem" }} className="text-center">
+      <Card.Body>
+        <Card.Title>{props.product["name"]}</Card.Title>
+        <Card.Subtitle>{props.product["id"]}</Card.Subtitle>
+      </Card.Body>
+      <Card.Footer>
+        <Button onClick={handleAddToBasket}>Add</Button>
+      </Card.Footer>
+    </Card>
   );
 }
 

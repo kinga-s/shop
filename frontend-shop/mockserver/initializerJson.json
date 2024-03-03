@@ -1,0 +1,57 @@
+[
+  {
+    "httpRequest": {
+      "method": "GET",
+      "path": "/all"
+    },
+    "httpResponse": {
+      "body": [
+        {
+          "id": "1",
+          "name": "someName"
+        },
+        {
+          "id": "2",
+          "name": "someName2"
+        },
+        {
+          "id": "3",
+          "name": "someName3"
+        },
+        {
+          "id": "4",
+          "name": "someName4"
+        },
+        {
+          "id": "5",
+          "name": "someName5"
+        },
+        {
+          "id": "6",
+          "name": "someName6"
+        },
+        {
+          "id": "7",
+          "name": "someName7"
+        },
+        {
+          "id": "8",
+          "name": "someName8"
+        },
+        {
+          "id": "9",
+          "name": "someName9"
+        },
+        {
+          "id": "10",
+          "name": "someName10"
+        },
+        {
+          "id": "11",
+          "name": "someName11"
+        }
+      ],
+      "statusCode": 200
+    }
+  }
+]
