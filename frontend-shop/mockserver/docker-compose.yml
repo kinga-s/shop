@@ -11,5 +11,7 @@ services:
       MOCKSERVER_INITIALIZATION_JSON_PATH: /config/initializerJson.json
       MOCKSERVER_ENABLE_CORS_FOR_API: "true"
       MOCKSERVER_ENABLE_CORS_FOR_ALL_RESPONSES: "true"
+      MOCKSERVER_CORS_ALLOW_ORIGIN: "*"
+      MOCKSERVER_CORS_ALLOW_METHODS: "*"
     volumes:
       - ./initializerJson.json:/config/initializerJson.json:Z

@@ -22,3 +22,7 @@ It is running on 8080 port with dummy data from `initializerJson.json` file
 ## FORMATTING
 
 `npx pretty-quick`
+
+## CURRENT STATE:
+Ugly app with empty components - ids of clicked items are displayed at the top of the page
+It is using `redux-persist`, so user remembered data are stored after refresh
