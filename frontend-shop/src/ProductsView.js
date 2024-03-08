@@ -1,6 +1,6 @@
 import Product from "./Product";
 import { useEffect, useState } from "react";
-import { Row, Col, Container, CardGroup } from "react-bootstrap";
+import { Row, Col, CardGroup } from "react-bootstrap";
 
 export default function ProductsView() {
   const baseURL = `http://localhost:8080/all`;

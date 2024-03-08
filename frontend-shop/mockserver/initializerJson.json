@@ -53,5 +53,15 @@
       ],
       "statusCode": 200
     }
+  },
+  {
+    "httpRequest": {
+      "method": "GET",
+      "path": "/product/1"
+    },
+    "httpResponse": {
+      "body": { "id": "1", "name": "plant name" },
+      "statusCode": 200
+    }
   }
 ]
