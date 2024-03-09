@@ -57,10 +57,14 @@
   {
     "httpRequest": {
       "method": "GET",
-      "path": "/product/1"
+      "path": "/product/.*"
     },
     "httpResponse": {
-      "body": { "id": "1", "name": "plant name" },
+      "body": {
+        "id": "1",
+        "name": "plant name",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum varius erat nunc, eget posuere elit lacinia et. Curabitur hendrerit, risus non elementum fermentum, erat quam ullamcorper urna, et consequat ex felis vitae tellus. Vivamus lacinia quam quam, eu pharetra risus ullamcorper ac. Maecenas sodales, enim vitae vulputate dictum, quam enim vulputate lacus, viverra finibus quam nunc dapibus lacus. Ut quis ipsum et odio viverra porttitor in sit amet quam."
+      },
       "statusCode": 200
     }
   }

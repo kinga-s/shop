@@ -103,6 +103,12 @@ footer {
   box-shadow: 0 0 0 0.2rem var(--main-light-contrast-color);
 }
 
+.btn-xl {
+  padding: 1rem 8rem;
+  font-size: 2rem;
+  border-radius: 5rem;
+}
+
 .btn-secondary,
 .btn-secondary:hover,
 .btn-secondary:focus,
@@ -127,4 +133,9 @@ footer {
 .card-img-top {
   max-width: 20rem;
   max-height: 30rem;
+}
+
+.allign_centrally {
+  text-align: center;
+  margin: auto;
 }

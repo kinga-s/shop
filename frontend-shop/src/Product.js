@@ -3,6 +3,7 @@ import { connect } from "react-redux";
 import { addToBasket } from "./actions";
 import { Card, Modal } from "react-bootstrap";
 import { useState } from "react";
+import ProductDescription from "./ProductDescription";
 
 import { Button } from "react-bootstrap";
 
@@ -28,16 +29,23 @@ function Product(props) {
         <Card.Subtitle>{props.product["id"]}</Card.Subtitle>
       </Card.Body>
 
-      <Modal show={show} onHide={handleClose} className="text-center" centered>
+      <Modal
+        show={show}
+        onHide={handleClose}
+        className="text-center"
+        size="lg"
+        centered
+      >
         <Modal.Header closeButton>
           <Modal.Title>{props.product["name"]}</Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <Card.Img variant="top" src="./photos/plant.png" />
+          <ProductDescription id={props.product["id"]}></ProductDescription>
         </Modal.Body>
-        <Modal.Footer>
-          <Button variant="primary" size="lg" onClick={handleAddToBasket}>
-            ADD
+        <Modal.Footer variant="centred" className="allign_centrally">
+          <Button variant="primary" onClick={handleAddToBasket} size="xl">
+            BUY NOW
           </Button>
         </Modal.Footer>
       </Modal>
